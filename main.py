@@ -15,7 +15,6 @@ class Parser():
         self.print_results(input('Показать темературу y/n? '),input('Показать влажность y/n? '),
                            input('Показать давление y/n? '),input('Показать скорость ветра y/n? '))
 
-
     def get_weather(self):
         self.driver.get("https://yandex.ru/pogoda/")
         element = self.driver.find_element(By.TAG_NAME, "input")
